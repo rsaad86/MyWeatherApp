@@ -64,6 +64,8 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-banner {
   color: var(--text_light);
+  background-image: url("./Images/pexels-andre-furtado-1162251.jpg");
+  background-size: 100%;
 }
 
 .heading {

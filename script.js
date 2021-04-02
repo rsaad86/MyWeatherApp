@@ -15,7 +15,8 @@ form.addEventListener("submit", (e) => {
     .then((response) => response.json())
     .then((data) => {
       var { main, name, sys, weather } = data;
-      const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
+      var icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
+      // var uvIndex = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
       var li = document.createElement("li");
       li.classList.add("city");
@@ -34,7 +35,7 @@ form.addEventListener("submit", (e) => {
       list.appendChild(li);
     })
     .catch(() => {
-      msg.textContent = "Please search for a valid city 😩";
+      msg.textContent = "Please search for a valid city";
     });
 
   msg.textContent = "";
