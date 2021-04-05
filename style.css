@@ -64,8 +64,7 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-banner {
   color: var(--text_light);
-  background-image: url("./Images/pexels-andre-furtado-1162251.jpg");
-  background-size: 100%;
+  background-color: rgb(28, 105, 131);
 }
 
 .heading {
@@ -124,7 +123,8 @@ body {
 .ajax-section .cities {
   display: grid;
   grid-gap: 32px 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 100px;
 }
 
 .ajax-section .city {
@@ -133,6 +133,11 @@ body {
   border-radius: 20px;
   background: var(--text_light);
   color: var(--text_med);
+  height: 100%;
+  width: 120%;
+  text-align: center;
+  margin-left: 200%;
+  margin-top: 30px;
 }
 
 .ajax-section .city::after {
@@ -155,7 +160,7 @@ body {
 }
 
 .ajax-section .city-temp {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-top: 10px;
   color: var(--text_dark);
@@ -173,9 +178,14 @@ body {
 }
 
 .ajax-section .city-icon {
-  margin-top: 10px;
-  width: 100px;
-  height: 100px;
+  margin-top: 0px;
+  margin-left: 30%;
+  width: 70px;
+  height: 70px;
+}
+
+.row {
+  width: 350%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -184,7 +194,7 @@ body {
   }
 
   .ajax-section .cities {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -245,4 +255,75 @@ body {
 
 .page-footer span {
   color: var(--red);
+}
+
+/* Additional Styling */
+
+.col-md-2 {
+  border: 2px solid lightskyblue;
+}
+
+.col-md-2 h2 {
+  color: var(--text_light);
+  text-align: center;
+  font-size: 32px;
+}
+
+.fiveDayForecast {
+  margin-left: 20px;
+  color: var(--text_light);
+  width: 100%;
+  height: 300px;
+  border: 2px solid lightskyblue;
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(6, 5fr);
+  overflow: hidden;
+}
+
+.fiveDays {
+  background-color: lightgray;
+  color: var(--text_dark);
+  border-radius: 15px;
+  text-align: center;
+  width: 85%;
+  height: 85%;
+  margin-top: 15px;
+  margin-left: 100px;
+  list-style-type: none;
+}
+
+.fiveDayCast {
+  width: 100%;
+  list-style-type: none;
+}
+
+.row {
+  padding: 0;
+  margin-bottom: -70px;
+  text-align: center;
+}
+.row h2 {
+  color: var(--text_light);
+  padding: 0;
+  margin: 0;
+}
+
+.currentForecastHeader {
+  color: var(--text_light);
+  text-align: center;
+  margin-top: -50px;
+}
+
+.list-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+}
+
+button .list-group-item {
+  text-align: center;
+  font-size: 16px;
 }

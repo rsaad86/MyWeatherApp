@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -18,11 +22,30 @@
         </form>
       </div>
     </section>
+
     <section class="ajax-section">
+      <h2 class="currentForecastHeader">Current Forecast</h2>
       <div class="container">
-        <ul class="cities"></ul>
+        <div class="col-md-2" style="height: 400px">
+          <h2>Search History</h2>
+          <ul class="list-group"></ul>
+        </div>
+        <ul class="cities">
+          <div class="container">
+            <div class="row"></div>
+          </div>
+        </ul>
       </div>
     </section>
+
+    <div class="row" style="width: 100%"><h2>5 Day Forecast</h2></div>
+
+    <section class="ajax-section">
+      <div class="fiveDayForecast">
+        <ul class="fiveDayCast"></ul>
+      </div>
+    </section>
+
     <footer class="page-footer">
       <div class="container">
         <small>Made by Rani Saad </small>
